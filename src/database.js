@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-mongoose.connect('mongodb+srv://gatocrack0:gatoblack2005@freecluster.qyhrk.mongodb.net/FreeCluster?retryWrites=true&w=majority',{
+mongoose.connect('mongodb+srv://gatocrack0:gatoblack2005@note-app.qyhrk.mongodb.net/note-app?retryWrites=true&w=majority',{
     useCreateIndex: true,
     useNewUrlParser: true,
     useFindAndModify: false,
