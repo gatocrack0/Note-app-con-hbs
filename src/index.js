@@ -8,7 +8,7 @@ const passport = require('passport');
 
 // Initializations
 const app = express();
-//require('./database');
+require('./database');
 require('./config/passport');
 
 // Settings
@@ -21,18 +21,6 @@ app.engine('.hbs', exphbs({
     extname: '.hbs'
 }));
 app.set('view engine', '.hbs');
-
-//db
-const mongoose = require("mongoose");
-
-mongoose.connect('mongodb+srv://gatocrack0:gatoblack2005@note-app.qyhrk.mongodb.net/note-app?retryWrites=true&w=majority',{
-    useCreateIndex: true,
-    useNewUrlParser: true,
-    useFindAndModify: false,
-    useUnifiedTopology: true
-})
-    .then(db => console.log('DB is connected'))
-    .catch(err => console.error(err)); 
 
 
 // Middlewares
